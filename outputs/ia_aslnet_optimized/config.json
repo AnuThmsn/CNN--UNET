@@ -1,0 +1,130 @@
+{
+  "mode": "optimized",
+  "image_size": 64,
+  "plds_s": [
+    1.525,
+    2.025,
+    2.525,
+    3.025
+  ],
+  "tau_s": 1.8,
+  "T1t_s": 1.2,
+  "T1a_s": 1.66,
+  "alpha": 0.85,
+  "beta": 0.75,
+  "lambda": 0.9,
+  "signal_scale": 100000.0,
+  "signal_reference": 334.2039,
+  "sigma_max": 66.84078,
+  "cbf_bounds": [
+    0.0,
+    100.0
+  ],
+  "att_bounds_s": [
+    0.5,
+    3.0
+  ],
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "train_seed": 42,
+  "val_seed": 99,
+  "test_seed": 7,
+  "smoke": {
+    "n_train": 12,
+    "n_val": 4,
+    "n_test": 6,
+    "features": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "epochs": 2,
+    "batch_size": 2,
+    "patience": 2,
+    "stress_n": 3
+  },
+  "optimized": {
+    "n_train": 240,
+    "n_val": 48,
+    "n_test": 30,
+    "features": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "epochs": 35,
+    "batch_size": 4,
+    "patience": 8,
+    "stress_n": 12
+  },
+  "full": {
+    "n_train": 600,
+    "n_val": 100,
+    "n_test": 100,
+    "features": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "epochs": 80,
+    "batch_size": 2,
+    "patience": 12,
+    "stress_n": 30
+  },
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "lr_factor": 0.5,
+  "lr_patience": 5,
+  "min_lr": 1e-06,
+  "physics_weight": 0.0,
+  "optimized_supervised_loss": "mse",
+  "run_ablation": false,
+  "run_three_seeds": false,
+  "resume": false,
+  "output_dir": "outputs/ia_aslnet_optimized",
+  "train_snr_choices": [
+    10.0,
+    15.0,
+    20.0
+  ],
+  "test_snr_choices": [
+    10.0,
+    15.0
+  ],
+  "active_settings": {
+    "n_train": 240,
+    "n_val": 48,
+    "n_test": 30,
+    "features": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "epochs": 35,
+    "batch_size": 4,
+    "patience": 8,
+    "stress_n": 12
+  },
+  "runtime": {
+    "device": "cuda",
+    "cuda": true,
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_memory_GiB": 3.99969482421875
+  },
+  "reference_audit": {
+    "source": "AnuThmsn/DNN-based-ASL-parameter-estimation-, experiments_unet_4pld",
+    "signal_scale": 100000.0,
+    "sum_of_two_rician_magnitudes": true,
+    "noise_sd_max": 66.84078,
+    "baseline_architecture": "double conv U-Net, transposed-conv decoder",
+    "optimizer": "AdamW lr=0.001 weight_decay=1e-4; masked L1; ReduceLROnPlateau; grad clip 1.0",
+    "smoke_mode_is_not_reference_reproduction": false
+  }
+}

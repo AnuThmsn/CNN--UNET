@@ -1,0 +1,2 @@
+seed_pair,n_phantoms,mean_IA_minus_baseline_ATT_RMSE_s,bootstrap_95pct_low,bootstrap_95pct_high
+_seed42,30,-0.00011733795205752055,-0.005276697784041364,0.004598283963277931

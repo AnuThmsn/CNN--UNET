@@ -1,0 +1,3 @@
+model,training_seconds,best_epoch,parameter_count,peak_gpu_memory_bytes,checkpoint
+baseline,117.1419977999758,29,1942738,107779584,D:\ASL PARAMETER\CNN-UNET\outputs\ia_aslnet_optimized\baseline_seed42_best.pt
+ia_timing,140.21957840002142,35,1949908,142449152,D:\ASL PARAMETER\CNN-UNET\outputs\ia_aslnet_optimized\ia_timing_seed42_best.pt

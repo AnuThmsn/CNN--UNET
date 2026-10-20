@@ -1,0 +1,71 @@
+{
+  "train_ids": [
+    "train-42-0",
+    "train-42-1",
+    "train-42-2",
+    "train-42-3",
+    "train-42-4",
+    "train-42-5",
+    "train-42-6",
+    "train-42-7",
+    "train-42-8",
+    "train-42-9",
+    "train-42-10",
+    "train-42-11"
+  ],
+  "validation_ids": [
+    "validation-99-0",
+    "validation-99-1",
+    "validation-99-2",
+    "validation-99-3"
+  ],
+  "test_ids": [
+    "test-7-0",
+    "test-7-1",
+    "test-7-2",
+    "test-7-3",
+    "test-7-4",
+    "test-7-5"
+  ],
+  "train_snr": [
+    10.0,
+    15.0,
+    15.0,
+    10.0,
+    10.0,
+    15.0,
+    10.0,
+    15.0,
+    10.0,
+    10.0,
+    15.0,
+    15.0
+  ],
+  "validation_snr": [
+    15.0,
+    15.0,
+    15.0,
+    15.0
+  ],
+  "test_snr": [
+    15.0,
+    15.0,
+    15.0,
+    15.0,
+    15.0,
+    15.0
+  ],
+  "normalization": {
+    "x_mean": 383.22894287109375,
+    "x_std": 233.16749572753906,
+    "y_mean": [
+      34.82347869873047,
+      1.5276707410812378
+    ],
+    "y_std": [
+      14.82421588897705,
+      0.3666965961456299
+    ]
+  },
+  "independent_unit": "whole synthetic phantom"
+}
